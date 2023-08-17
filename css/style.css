@@ -1,0 +1,834 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 1411px;
+  margin: auto;
+}
+.box {
+  display: flex;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.title h1 {
+  font-size: 64px;
+  font-weight: 700;
+  width: 771px;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.title2 p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #ff5538;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+.title2 h2 {
+  font-size: 48px;
+  font-weight: 600;
+  width: 449px;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+}
+.two_common h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #29313d;
+  width: 570px;
+  font-family: "Poppins", sans-serif;
+
+  margin-bottom: 20px;
+}
+.two_common p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  width: 501px;
+  font-family: "Nunito", sans-serif;
+  line-height: 40px;
+  margin-bottom: 48px;
+}
+
+.two_common .button a {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #ff5538;
+  border-radius: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  font-style: 18px;
+  font-family: "Nunito", sans-serif;
+  background-color: #ff5538;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+.two_common .button a:hover {
+  background-color: transparent;
+  border: 1px solid #ff5538;
+  color: #ff5538;
+}
+/* =====================
+nabvar part start 
+=======================*/
+
+nav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 30px;
+  left: 0px;
+}
+.img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.img3 {
+  position: absolute;
+  top: 201px;
+  left: 53px;
+  animation: img3 5s infinite alternate;
+}
+@keyframes img3 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50px);
+  }
+}
+.img4 {
+  position: absolute;
+  bottom: -108px;
+  right: 0px;
+  animation: img4 5s infinite linear alternate;
+}
+@keyframes img4 {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+.img5 {
+  position: absolute;
+  top: 443px;
+  left: 190px;
+  animation: img5 10s infinite linear alternate;
+}
+@keyframes img5 {
+  0% {
+    transform: translateX(-50px);
+  }
+  25% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  75% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+.img6 {
+  position: absolute;
+  top: 857px;
+  left: 0;
+  animation: img6 4s infinite linear;
+}
+@keyframes img6 {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.animate1 {
+  border: 1px solid #ffabba;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 132px;
+  left: 714px;
+  position: absolute;
+  animation: animate1 4s infinite linear;
+}
+
+.animate2 {
+  background-color: #ffabba;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  bottom: 0;
+  left: 10px;
+  position: absolute;
+}
+@keyframes animate1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.dot {
+  background-color: #c087ee;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 264px;
+  right: 620px;
+  position: absolute;
+  animation: dot 3s infinite alternate;
+}
+.cross {
+  color: #c087ee;
+  border-radius: 50%;
+  top: 337px;
+  left: 1240px;
+  position: absolute;
+  animation: animate1 4s infinite linear;
+}
+.cross2 {
+  color: #c087ee;
+  border-radius: 50%;
+  top: 337px;
+  right: 1240px;
+  position: absolute;
+  animation: animate1 4s infinite linear;
+}
+
+@keyframes dot {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+nav .logo {
+  width: 20%;
+}
+nav .memu_part {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .memu_part ul {
+  display: flex;
+  column-gap: 48px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #29313d;
+  transition: 0.4s;
+  cursor: pointer;
+}
+nav .memu_part ul li {
+  transition: 0.4s;
+}
+nav .memu_part ul li i {
+  margin-left: 8px;
+}
+nav .memu_part ul li:hover {
+  color: dodgerblue;
+}
+nav .button {
+  width: 20%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .button a {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #ff5538;
+  border-radius: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  font-style: 18px;
+  font-family: "Nunito", sans-serif;
+  background-color: #ff5538;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+nav .button a:hover {
+  background-color: transparent;
+  border: 1px solid #ff5538;
+  color: #ff5538;
+}
+/* =====================
+nabvar part end 
+=======================*/
+/* =====================
+banner part start 
+=======================*/
+.banner {
+  padding: 290px 0;
+  background: url("../images/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner .title p {
+  font-size: 18px;
+  font-weight: 400;
+  width: 547px;
+  color: #29313d;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 44px;
+}
+.banner .title .button {
+  text-align: center;
+}
+.banner .title .button a {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #ff5538;
+  border-radius: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  font-style: 18px;
+  font-family: "Nunito", sans-serif;
+  background-color: #ff5538;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  margin-left: 24px;
+}
+.banner .title .button a:hover {
+  background-color: transparent;
+  border: 1px solid #ff5538;
+  color: #ff5538;
+}
+/* =====================
+banner part end 
+=======================*/
+/* =====================
+service part start 
+=======================*/
+.service {
+}
+.animtetwo {
+  border: 1px solid #ffabba;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 1296px;
+  left: 786px;
+  position: absolute;
+  animation: animate1 4s infinite linear;
+}
+
+.animatetwo2 {
+  background-color: #ffabba;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  bottom: 0;
+  left: 10px;
+  position: absolute;
+}
+@keyframes animate1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.img8 {
+  position: absolute;
+  top: 1500px;
+  right: 0px;
+  animation: img8 2s infinite alternate;
+}
+@keyframes img8 {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+.service .box {
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.service .item {
+  padding: 40px 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 11px 61px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 11px 61px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 11px 61px 5px rgba(0, 0, 0, 0.1);
+}
+.service .item h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  margin-top: 34px;
+  margin-bottom: 16px;
+}
+.service .item p {
+  font-size: 18px;
+  font-weight: 400;
+  width: 374px;
+  color: #29313d;
+  font-family: "Nunito", sans-serif;
+}
+/* =====================
+service part end 
+=======================*/
+/* =====================
+expriense part end 
+=======================*/
+.exprience {
+}
+.img9 {
+  position: absolute;
+  top: 1816px;
+  left: 0px;
+  animation: img9 2s infinite alternate;
+}
+@keyframes img9 {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.exprience .main {
+  display: flex;
+}
+.exprience .main .one {
+  width: 50%;
+}
+.exprience .main .one {
+  position: relative;
+}
+.exprience .main .one img {
+  position: absolute;
+
+  top: 68px;
+  left: 0px;
+  width: 109%;
+}
+
+.exprience .main .two_common {
+  background: url("../images/exprairanimg2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 180px;
+  width: 50%;
+}
+
+/* =====================
+expriense part end 
+=======================*/
+/* =====================
+work part start
+=======================*/
+.work {
+  margin: 120px 0px;
+}
+.work .box {
+  justify-content: space-between;
+  align-items: center;
+}
+.work .title2 h2 {
+  width: 693px;
+  margin-bottom: 60px;
+}
+.work .button a {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #ff5538;
+  border-radius: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  font-style: 18px;
+  font-family: "Nunito", sans-serif;
+  background-color: #ff5538;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+.work .button a:hover {
+  background-color: transparent;
+  border: 1px solid #ff5538;
+  color: #ff5538;
+}
+.work .left {
+  width: 40%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.work .left img {
+  width: 100%;
+  height: 460px;
+}
+.work .card {
+  width: 100%;
+  height: 126px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -139px;
+  left: 0;
+  padding: 30px;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 6px 45px -12px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 6px 45px -12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 45px -12px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  opacity: 0;
+}
+.work .left:hover .card {
+  bottom: 0;
+  opacity: 1;
+}
+.work .right:hover .card {
+  bottom: 0;
+  opacity: 1;
+}
+
+.work .card h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.work .card a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff5538;
+  font-family: "Nunito", sans-serif;
+}
+.work .right {
+  width: 58%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.work .right img {
+  width: 100%;
+  height: 460px;
+}
+
+/* =====================
+work part end 
+=======================*/
+/* =====================
+about part start 
+=======================*/
+.about {
+  background: url("../images/aboutimg1.png");
+  padding: 120px;
+}
+.img10 {
+  position: absolute;
+  top: 3550px;
+  right: 0;
+  animation: img10 4s infinite ease-out;
+}
+@keyframes img10 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 500px;
+  }
+}
+.about .box {
+  justify-content: space-between;
+}
+.about .left {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.about .left .card {
+  width: 47%;
+
+  background-color: #fff;
+  padding: 74px 60px;
+  box-sizing: border-box;
+}
+.about .left .card h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #29313d;
+  font-family: "Poppins", sans-serif;
+}
+.about .left .card p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  font-family: "Nunito", sans-serif;
+}
+.about .right {
+  width: 50%;
+}
+.about .right .two_common h2 {
+  width: 470px;
+}
+.about .right .two_common p {
+  width: 530px;
+}
+/* =====================
+about part end 
+=======================*/
+/* =====================
+campain part satat 
+=======================*/
+.campain {
+  margin: 120px;
+}
+.campain .box {
+  justify-content: space-between;
+}
+.campain .title h1 {
+  width: 850px;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+/* =====================
+campain part end 
+=======================*/
+/* =====================
+customer part start 
+=======================*/
+.customer {
+  background: url("../images/aboutimg1.png");
+  padding: 140px;
+}
+.customer .left {
+  width: 50%;
+}
+.customer .left .img_box {
+  display: flex;
+  column-gap: 28px;
+  margin: 60px 0;
+}
+.customer .left p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #29313d;
+  width: 690px;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 60px;
+}
+.customer .left h4 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #29313d;
+  font-family: "Open Sans", sans-serif;
+
+  display: inline;
+}
+.customer .left .button {
+  display: inline-block;
+  margin-left: 40px;
+}
+.customer .left .button a {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #ff5538;
+  border-radius: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  font-style: 18px;
+  font-family: "Nunito", sans-serif;
+  background-color: #ff5538;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  margin-left: 24px;
+}
+.customer .left .button a:hover {
+  background-color: transparent;
+  border: 1px solid #ff5538;
+  color: #ff5538;
+}
+.customer .right {
+  width: 50%;
+  text-align: center;
+}
+
+/* =====================
+customer part end 
+=======================*/
+/* =====================
+project part start 
+=======================*/
+.project {
+  background: url("../images/projectimg1.png");
+  padding: 100px;
+}
+.img11 {
+  position: absolute;
+  top: 5702px;
+  right: 0;
+  animation: img11 4s infinite ease-out;
+}
+.img12 {
+  position: absolute;
+  top: 5714px;
+  right: 81px;
+  animation: img12 4s infinite linear alternate;
+}
+@keyframes img12 {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.project .box {
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #29313d;
+}
+.project .title2 h2 {
+  margin-bottom: 48px;
+}
+
+.project .title2 p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 7px;
+  color: #29313d;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+.project .button a {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #ff5538;
+  border-radius: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  font-style: 18px;
+  font-family: "Nunito", sans-serif;
+  background-color: #ff5538;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  margin-left: 24px;
+}
+.project .button a:hover {
+  background-color: transparent;
+  border: 1px solid #ff5538;
+  color: #ff5538;
+}
+.project p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 24px;
+  color: #29313d;
+  width: 1245px;
+  text-transform: capitalize;
+  font-family: "Nunito", sans-serif;
+}
+/* =====================
+project part end 
+=======================*/
+/* =====================
+footer part start 
+=======================*/
+.footer {
+  margin-top: 140px;
+}
+.footer .one {
+  width: 40%;
+}
+.footer .one p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 44px;
+  color: #29313d;
+  width: 449px;
+  text-transform: capitalize;
+  font-family: "Nunito", sans-serif;
+}
+.footer .two {
+  width: 20%;
+}
+.footer h5 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #29313d;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 48px;
+}
+.footer ul {
+  font-size: 20px;
+  font-weight: 500;
+  color: #29313d;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+.footer ul li {
+  margin-bottom: 30px;
+  transition: 0.4s;
+}
+.footer ul li:hover {
+  color: dodgerblue;
+}
+.footer .three {
+  width: 20%;
+}
+.footer .four {
+  width: 20%;
+}
+.footer .frist {
+  width: 60%;
+}
+.footer .second {
+  width: 20%;
+}
+.footer .third {
+  width: 20%;
+}
+.footer p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  text-transform: capitalize;
+  font-family: "Nunito", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+/* =====================
+footer part end 
+=======================*/
